@@ -1,6 +1,7 @@
-import 'package:fluter_1/My_App.dart';
 import 'package:flutter/material.dart';
 
+import 'my_app.dart';
+
 void main() {
-  runApp(const MyApp()); // runApp()---запускател апп
+  runApp(const MyApp());
 }

@@ -1,10 +1,7 @@
-import 'package:fluter_1/Counter1_Page.dart';
 import 'package:flutter/material.dart';
 
-//Статусу жок (жарандыгы жок) виджеттер колдонмо учурунда касиеттерин өзгөртпөйт.
-//Мындай виджеттер жарандыгы жок.
-// Аларды ата-энелик контейнер виджетинде пайда болгон тышкы окуялар менен гана өзгөртүүгө болот.
-// Ал эми StatelessWidget классы виджеттин ушул түрүн гана көрсөтөт.
+import 'counterapp1.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -14,10 +11,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 76, 125, 231)),
+        //useMaterial3: true,
       ),
-      home: const Counter1Page(),
+      home: Counter1Page(),
     );
   }
 }
